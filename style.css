@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+section#container-body {
+    
+    width: 600px;
+    margin: auto;
+}
+#container-body div#container-grid{
+    display: flex;
+    margin-top: 100px;
+}
+#container-grid div#grid01{
+    background-color: hsl(31, 77%, 52%);
+    height: 380px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+#container-grid div#grid02{
+    background-color: hsl(184, 100%, 22%);
+    height: 380px;
+}
+#container-grid div#grid03{
+    background-color: hsl(179, 100%, 13%);
+    height: 380px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.par p, h1{
+    margin: 50px 20px;
+    color: white;
+}
+.par h1 {
+    margin-top:20px ;
+    font-family: 'Big Shoulders Display', cursive;
+}
+.par p{
+ font-size: 13px;
+ color: hsla(0, 0%, 100%, 0.75);
+}
+.par a {
+    text-decoration: none;
+    padding: 12px 18px;
+    background-color: white;
+    border-radius: 25px;
+    margin: 20px;
+    transition: 0.2s;
+}
+#grid01 a {
+    color: hsl(31, 77%, 52%);
+    font-size: 14px;
+    border: 2px solid hsl(31, 77%, 52%);
+}
+#grid01 a:hover{
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid white;
+    color: white;
+}
+#grid02 a {
+    color: hsl(184, 100%, 22%);
+    font-size: 14px;
+    border: 2px solid hsl(184, 100%, 22%);
+}
+#grid02 a:hover{
+    background-color: hsl(184, 100%, 22%);
+    border: 2px solid white;
+    color: white;
+}
+#grid03 a {
+    color: hsl(179, 100%, 13%);
+    font-size: 14px;
+    border: 2px solid hsl(179, 100%, 13%);
+}
+#grid03 a:hover{
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+    color: white;
+}
+#grid01 div#img01{
+    background: url('images/icon-sedans.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+}
+#grid02 div#img02{
+    background: url('images/icon-suvs.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+}
+#grid03 div#img03{
+    background: url('images/icon-luxury.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+    
+}
+@media (max-width: 600px ) {
+    section#container-body {
+        width: 300px;
+        margin: auto;
+    }
+    #container-body div#container-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #container-grid div#grid01{
+        background-color: hsl(31, 77%, 52%);
+        height: 340px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 8px;
+    }
+    #container-grid div#grid02{
+        background-color: hsl(184, 100%, 22%);
+        height: 340px;
+    }
+    #container-grid div#grid03{
+        background-color: hsl(179, 100%, 13%);
+        height: 340px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+}
